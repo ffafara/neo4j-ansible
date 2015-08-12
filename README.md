@@ -12,21 +12,17 @@ Use these playbooks to boot a neo4j development environment using Vagrant.
 
 * Clone this repo.
 * `vagrant up` or `vagrant up --provider=vmware_fusion` if you're using VMware Vagrant.
-* Once provisioned, neo4j will be available at `http://192.168.22.22`
+* Once provisioned, neo4j will be available at `http://192.168.33.10`
 
 That's it.
 
 ## Authentication
 
-This playbook installs [authentication-extension](https://github.com/neo4j-contrib/authentication-extension/tree/2.0) by default. The default username and password are `username` and `password`. See the readme for that repo on how to configure it.
+The default username and password are `username` and `password`.
 
 ## Upstart
 
 This playbook uses `upstart` to restart neo4j automatically whenever the server is restarted.
-
-## Testing
-
-Please test any changes to the playbook using serverspec. To run the tests, run `bundle install` and `bundle exec rake spec`. Check out the `spec/` folder for examples.
 
 ## Licence
 
